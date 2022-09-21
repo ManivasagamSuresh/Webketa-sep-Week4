@@ -1,0 +1,39 @@
+<!-- Display grid-items by using "justify-content : space-between", change row size value as 100px 80px -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+   .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows:100px 80px;
+           justify-content : space-between;
+                grid-gap: 20px;
+                padding: 10px;
+            
+                background-color: dodgerblue;
+            }
+            .grid-container >div {
+                padding: 10px;
+                text-align: center;
+                font-size: 30px;
+                background-color: #f1f1f1;
+            }
+
+
+</style>
+</head>
+<body>
+
+   <div class="grid-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+</body>
+</html>
